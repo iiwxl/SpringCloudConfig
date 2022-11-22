@@ -1,16 +1,13 @@
 eureka: 
-	client:
-		service-url:
-		defaultZone: http://localhost:9000/eureka/
-		
-    
-    
+  client:
+   service-url:
+   defaultZone: http://localhost:9000/eureka/  
     
 zuul: 
-	routes:
+   routes:
     product: 
-	    path: /product/**
-		  service-id: PRODUCT
-		orders:	      
-      path: /orders/**
-			service-id: ORDER   
+	path: /product/**
+	service-id: PRODUCT
+    orders:	      
+         path: /orders/**
+	 service-id: ORDER   
